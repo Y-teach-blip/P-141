@@ -1,0 +1,213 @@
+body
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heading
+{
+    width: 100%;
+    text-align: center;
+}
+
+.heading h3
+{
+    display: inline;
+}
+
+
+
+#start, #status
+{
+    font-size: 22px;
+}
+
+#start
+{
+    position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#start:hover, .button:hover
+{
+    background-color: #8e3e5f
+}
+
+#start:after, .button:after
+{
+    content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+#start:active::after, .button:active::after
+{
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+.button,#start {
+    
+    transition-duration: 0.4s;
+    position: relative;
+    background-color: #4CAF50;
+    border: none;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+
+
+.button, #start
+{
+    transition-duration: 0.4s;
+}
+
+
+
+  @keyframes example {
+    from {
+        box-shadow: 1px 1px 38px rgb(255, 180, 130);;
+    }
+
+    to {
+        box-shadow: 1px 1px 38px rgb(252, 161, 217);
+    }
+}
+
+.heading button
+{
+    float: right;
+    border: 1px solid white;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+
+.heading:hover
+{
+    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+}
+
+.heading button:hover
+{
+    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+    transition-duration: 0.4s;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999; 
+    
+}
+
+.heading button:active
+{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+ @keyframes example {
+    from {
+        box-shadow: 2px 2px 38px rgb(90, 61, 255);
+    }
+
+    to {
+        box-shadow: 1px 1px 38px rgb(133, 23, 118);
+    }
+}
+
+
+
+.button
+{
+    background-image: url("9090.jpg");
+}
+
+#start
+{
+    background-image: url("1010.jpg");
+}
+
+#button
+{
+    background-image: url("woho.png");    
+}
+
+ol
+{
+    width: 90%;
+    background-image: url("ol_backdrop.webp");
+    color: black;
+}
+
+.copy_right_footer
+{
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    
+    line-height: 3;
+    text-shadow: 5px 5px 5px rgb(151,149,149);
+    background-image: linear-gradient( 102.4deg,  rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3% );
+}
+
+.copy_right_footer:hover
+{
+    background-image: url("woho.png");
+    color: white;
+}
+
+canvas
+{
+    border: 5px double rgb(202, 198, 198);
+    box-shadow: 5px 5px 5px plum;
+    border-radius: 15px;
+}
+
+#outcome
+{
+    background-image: url("woho.png");
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
